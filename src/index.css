@@ -1,62 +1,365 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@import url('https://api.fontshare.com/v2/css?f[]=sentient@200,300,400,500,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap');
 
-@layer base {
-  :root {
-    --site-header-height: 64px;
-    --mint: #a1ffcb;
-    --emerald: #10b981;
-    --forest: #073b34;
-    --theme-fg: #0f172a;
-    --theme-bg: #f8fafc;
-    --grey: #f1f5f9;
-    --font-family-unified: "Inter", "Tajawal", "Sentient", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  }
-
-  html {
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  body {
-    background-color: var(--theme-bg);
-    color: var(--theme-fg);
-    font-family: var(--font-family-unified);
-    overflow-x: hidden;
-  }
-
-  svg {
-    max-width: 100%;
-    max-height: 100%;
-  }
-
-  svg[class*="stroke-current"] {
-    width: 1rem !important;
-    height: 1rem !important;
-    max-width: 1.25rem !important;
-    max-height: 1.25rem !important;
-    flex-shrink: 0 !important;
-  }
+/* ==========================================================================
+   CUSTOM FONT INTEGRATION: SENTIENT (FONTSHARE CDN)
+   Unified luxury serif typography across all elements & weights
+   ========================================================================== */
+@font-face {
+  font-family: 'Sentient';
+  src: url('https://cdn.fontshare.com/wf/RVTZPYAA57KV4AMXRX7ZIPJXSTYCRP7A/36OUS5CBIXRKI2QU7G7OUHOK7HHA53Y2/SIH66VPT4WS2HIF5PEJNDU4INNUF54LG.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
 }
 
+@font-face {
+  font-family: 'Sentient';
+  src: url('https://cdn.fontshare.com/wf/2Q5D4D54Z3V57LOD62X6T42Q53X7L435/M3G43D56EMUHUEP2JAWS7SGZ7N6BGP7I/M6X7C56BMVHUUEP2JAWS7SGZ7N6BGP7I.woff2') format('woff2');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sentient';
+  src: url('https://cdn.fontshare.com/wf/7Z3Z7Y43N6G2Z435Y2O3X7KFIYNEDOYN/7N5WRFRAIPNFWYAJAJ745TRROFHE3UO2/6TUKGU746RMHV2P63Q65JEAXRMUZNC7S.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sentient-Regular';
+  src: url('https://cdn.fontshare.com/wf/RVTZPYAA57KV4AMXRX7ZIPJXSTYCRP7A/36OUS5CBIXRKI2QU7G7OUHOK7HHA53Y2/SIH66VPT4WS2HIF5PEJNDU4INNUF54LG.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sentient-Medium';
+  src: url('https://cdn.fontshare.com/wf/2Q5D4D54Z3V57LOD62X6T42Q53X7L435/M3G43D56EMUHUEP2JAWS7SGZ7N6BGP7I/M6X7C56BMVHUUEP2JAWS7SGZ7N6BGP7I.woff2') format('woff2');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sentient-Bold';
+  src: url('https://cdn.fontshare.com/wf/7Z3Z7Y43N6G2Z435Y2O3X7KFIYNEDOYN/7N5WRFRAIPNFWYAJAJ745TRROFHE3UO2/6TUKGU746RMHV2P63Q65JEAXRMUZNC7S.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@theme {
+  --font-sans: 'Sentient', 'Tajawal', serif, system-ui, sans-serif;
+  --font-serif: 'Sentient', 'Tajawal', serif;
+  --font-mono: 'Sentient', 'Tajawal', serif, sans-serif;
+}
+
+:root {
+  --site-header-height: 64px;
+  --mint: #A1FFCB;
+  --emerald: #10B981;
+  --forest: #073B34;
+  --theme-fg: #0F172A;
+  --theme-bg: #F8FAFC;
+  --grey: #F1F5F9;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Custom Scrollbar for high-end feel */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
+  height: 6px;
 }
-
 ::-webkit-scrollbar-track {
-  background: #f8fafc;
+  background: #06090F;
 }
-
 ::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
-  border-radius: 4px;
+  background: #1f2937;
+  border-radius: 3px !important;
 }
-
 ::-webkit-scrollbar-thumb:hover {
-  background: #10b981;
+  background: #06b6d4;
 }
 
+/* Standard scrollbar for Firefox & modern engines */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #1f2937 #06090F;
+}
+
+* {
+  border-radius: 0px !important;
+}
+
+.cursor-dot,
+.cursor-ring,
+.rounded-circle,
+.particle-dot {
+  border-radius: 9999px !important;
+}
+
+/* Lenis smooth scrolling styles */
+html.lenis, html.lenis body {
+  height: auto;
+  touch-action: pan-y;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+/* Force hardware-accelerated transforms for mobile reveals */
+@media (max-width: 768px) {
+  .card-hover-lift,
+  [data-lenis-prevent] {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    backface-visibility: hidden;
+  }
+}
+
+/* Responsive Centered Hero Background Video */
+.hero-video-wrapper {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.hero-video-wrapper video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}
+
+/* Refined interactive glassmorphic workflow cards with emerald glow */
+.workflow-glass-card {
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(16, 185, 129, 0.18);
+  position: relative;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.35s ease,
+              background-color 0.35s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.workflow-glass-card:hover {
+  background: rgba(255, 255, 255, 0.96);
+  border-color: rgba(16, 185, 129, 0.55);
+  box-shadow: 0 16px 38px -8px rgba(16, 185, 129, 0.16), 0 0 0 1px rgba(16, 185, 129, 0.35);
+  transform: translateY(-4px);
+}
+
+.workflow-glass-card.is-active-stage {
+  background: rgba(255, 255, 255, 0.98);
+  border-color: #10B981;
+  box-shadow: 0 18px 42px -6px rgba(16, 185, 129, 0.22), 0 0 0 1.5px #10B981;
+  transform: translateY(-3px);
+}
+
+.workflow-glass-card:active {
+  transform: scale(0.995) translateY(-1px);
+}
+
+body {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  font-family: 'Sentient', 'Tajawal', system-ui, sans-serif !important;
+  color: #0F172A;
+  background-color: #F8FAFC;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (pointer: fine) {
+  body {
+    cursor: none;
+  }
+  a, button, input, select, textarea, [role="button"] {
+    cursor: none;
+  }
+}
+
+/* Default Body Sans font across application */
+.font-sans {
+  font-family: 'Sentient', 'Tajawal', sans-serif !important;
+}
+
+/* Typography: Sentient font family across headlines and titles */
+.font-heading,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Sentient', 'Tajawal', sans-serif !important;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  letter-spacing: -0.035em;
+  line-height: 1.1;
+}
+
+h2 {
+  letter-spacing: -0.025em;
+  line-height: 1.16;
+}
+
+h3 {
+  letter-spacing: -0.015em;
+  line-height: 1.25;
+}
+
+/* Secondary technical and geometric typography */
+.font-subheading,
+.font-tech,
+.font-sans-tech {
+  font-family: 'Sentient', 'Tajawal', sans-serif !important;
+}
+
+.font-mono {
+  font-family: 'Sentient', 'Tajawal', sans-serif !important;
+}
+
+/* Clean reading line-height and crisp contrast for paragraph descriptions */
+p {
+  line-height: 1.68;
+}
+
+button,
+input,
+select,
+textarea,
+nav,
+a {
+  font-family: inherit;
+}
+
+/* Custom Utilities for STARK architectural brand */
+.bg-mint {
+  background-color: #A1FFCB;
+}
+.text-mint {
+  color: #A1FFCB;
+}
+.border-mint {
+  border-color: #A1FFCB;
+}
+
+.bg-emerald-brand {
+  background-color: #10B981;
+}
+.text-emerald-brand {
+  color: #10B981;
+}
+.border-emerald-brand {
+  border-color: #10B981;
+}
+
+.bg-forest-brand {
+  background-color: #073B34;
+}
+.text-forest-brand {
+  color: #073B34;
+}
+.border-forest-brand {
+  border-color: #073B34;
+}
+
+.bg-theme-fg {
+  background-color: #0F172A;
+}
+.text-theme-fg {
+  color: #0F172A;
+}
+
+.bg-theme-bg {
+  background-color: #F8FAFC;
+}
+.text-theme-bg {
+  color: #F8FAFC;
+}
+
+.bg-grey {
+  background-color: #F1F5F9;
+}
+.text-grey {
+  color: #94A3B8;
+}
+
+/* Card hover lift with cubic-bezier easing and subtle emerald glow */
+.card-hover-lift {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
+}
+
+.card-hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 32px -4px rgba(16, 185, 129, 0.14), 0 0 0 1px rgba(16, 185, 129, 0.3);
+}
+
+.card-hover-lift-dark {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
+}
+
+.card-hover-lift-dark:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 32px -4px rgba(16, 185, 129, 0.25), 0 0 0 1px #10B981;
+}
+
+/* Card with top emerald accent stripe */
+.card-top-accent {
+  position: relative;
+}
+
+.card-top-accent::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: #10B981;
+  z-index: 2;
+}
+
+/* Marquee infinite animation */
 @keyframes marquee {
   0% {
     transform: translateX(0%);
@@ -69,50 +372,20 @@
 .animate-marquee {
   display: flex;
   width: max-content;
-  animation: marquee 25s linear infinite;
+  animation: marquee 20s linear infinite;
 }
 
 .animate-marquee:hover {
   animation-play-state: paused;
 }
 
-.hero-video-wrapper {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  z-index: 0;
-  pointer-events: none;
+/* Hide scrollbars when desired */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
-.hero-video-wrapper video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0.25;
-  filter: contrast(1.05) brightness(0.95);
-}
 
-.workflow-glass-card {
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(8px);
-  border: 1px solid rgba(226, 232, 240, 0.8);
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.workflow-glass-card.is-active-stage {
-  border-color: rgba(16, 185, 129, 0.4);
-  box-shadow: 0 10px 30px -10px rgba(16, 185, 129, 0.15);
-}
-
-html[dir="ltr"] p,
-html[dir="ltr"] h1,
-html[dir="ltr"] h2,
-html[dir="ltr"] h3,
-html[dir="ltr"] li,
-html[dir="ltr"] span:not([class*="h-"]):not([class*="w-"]) {
-  direction: ltr;
-  text-align: left;
-  unicode-bidi: isolate;
-}
