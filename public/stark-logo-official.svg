@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 380" width="2000" height="760">
+  <defs>
+    <linearGradient id="tankBody" x1="0%" y1="20%" x2="100%" y2="80%">
+      <stop offset="0%" stop-color="#04322A" />
+      <stop offset="35%" stop-color="#064E41" />
+      <stop offset="70%" stop-color="#0D8A68" />
+      <stop offset="95%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#2DD4BF" />
+    </linearGradient>
+    <linearGradient id="orbitSwoosh" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#053B32" />
+      <stop offset="30%" stop-color="#0A6C56" />
+      <stop offset="65%" stop-color="#10B981" />
+      <stop offset="85%" stop-color="#4ADE80" />
+      <stop offset="100%" stop-color="#86EFAC" />
+    </linearGradient>
+    <linearGradient id="aLeftLegGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="60%" stop-color="#22C55E" />
+      <stop offset="100%" stop-color="#4ADE80" />
+    </linearGradient>
+    <linearGradient id="tankRoof" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#032620" />
+      <stop offset="50%" stop-color="#053A31" />
+      <stop offset="100%" stop-color="#0A6352" />
+    </linearGradient>
+  </defs>
+
+  <g id="tank-symbol" transform="translate(45, 20)">
+    <path d="M 25 210 C 10 242, 30 280, 95 298 C 165 318, 275 306, 365 215 C 372 208, 376 200, 380 192 C 365 220, 295 290, 195 294 C 115 298, 45 264, 25 210 Z" fill="url(#orbitSwoosh)" />
+    <path d="M 95 85 C 95 85, 175 58, 265 82 C 270 82, 272 120, 272 238 C 220 258, 150 258, 95 238 Z" fill="url(#tankBody)" />
+    <path d="M 95 85 C 95 65, 175 46, 265 72 C 265 78, 177 62, 95 85 Z" fill="url(#tankRoof)" />
+    <path d="M 106 70 C 158 54, 218 54, 262 68" stroke="#052E27" stroke-width="5" fill="none" stroke-linecap="round" />
+    <line x1="120" y1="67" x2="120" y2="80" stroke="#052E27" stroke-width="3.5" />
+    <line x1="152" y1="61" x2="152" y2="73" stroke="#052E27" stroke-width="3.5" />
+    <line x1="184" y1="58" x2="184" y2="70" stroke="#052E27" stroke-width="3.5" />
+    <line x1="216" y1="60" x2="216" y2="72" stroke="#052E27" stroke-width="3.5" />
+    <line x1="246" y1="64" x2="246" y2="77" stroke="#052E27" stroke-width="3.5" />
+    <path d="M 76 88 L 76 242 M 87 83 L 87 240" stroke="#042822" stroke-width="5" stroke-linecap="round" />
+    <line x1="76" y1="102" x2="87" y2="102" stroke="#042822" stroke-width="3.5" />
+    <line x1="76" y1="122" x2="87" y2="122" stroke="#042822" stroke-width="3.5" />
+    <line x1="76" y1="142" x2="87" y2="142" stroke="#042822" stroke-width="3.5" />
+    <line x1="76" y1="162" x2="87" y2="162" stroke="#042822" stroke-width="3.5" />
+    <line x1="76" y1="182" x2="87" y2="182" stroke="#042822" stroke-width="3.5" />
+    <line x1="76" y1="202" x2="87" y2="202" stroke="#042822" stroke-width="3.5" />
+    <line x1="76" y1="222" x2="87" y2="222" stroke="#042822" stroke-width="3.5" />
+    <line x1="76" y1="236" x2="87" y2="236" stroke="#042822" stroke-width="3.5" />
+    <g id="palm-tree" transform="translate(180, 168) scale(1.45)">
+      <path d="M -3 42 L -2 0 L 2 0 L 3 42 Z" fill="#FFFFFF" />
+      <path d="M -4.5 42 L 4.5 42 L 3.5 38 L -3.5 38 Z" fill="#FFFFFF" />
+      <path d="M 0 0 C -2 -14, 0 -26, 0 -34 C 2 -26, 3 -14, 0 0 Z" fill="#FFFFFF" />
+      <path d="M -1 -2 C -8 -12, -18 -22, -26 -20 C -18 -12, -10 -5, -1 -2 Z" fill="#FFFFFF" />
+      <path d="M 1 -2 C 8 -12, 18 -22, 26 -20 C 18 -12, 10 -5, 1 -2 Z" fill="#FFFFFF" />
+      <path d="M -1 4 C -10 -4, -24 -6, -32 0 C -22 3, -11 5, -1 4 Z" fill="#FFFFFF" />
+      <path d="M 1 4 C 10 -4, 24 -6, 32 0 C 22 3, 11 5, 1 4 Z" fill="#FFFFFF" />
+      <path d="M -1 10 C -10 8, -21 15, -27 24 C -19 17, -10 12, -1 10 Z" fill="#FFFFFF" />
+      <path d="M 1 10 C 10 8, 21 15, 27 24 C 19 17, 10 12, 1 10 Z" fill="#FFFFFF" />
+    </g>
+    <rect x="272" y="94" width="14" height="14" fill="#0E8A74" rx="1.5" />
+    <rect x="290" y="103" width="11" height="11" fill="#10B981" rx="1.5" />
+    <rect x="275" y="114" width="18" height="18" fill="#0A7460" rx="2" />
+    <rect x="297" y="118" width="13" height="13" fill="#34D399" rx="1.5" />
+    <rect x="315" y="112" width="10" height="10" fill="#10B981" rx="1.5" />
+    <rect x="269" y="138" width="19" height="19" fill="#086352" rx="2" />
+    <rect x="292" y="140" width="15" height="15" fill="#10B981" rx="2" />
+    <rect x="312" y="145" width="11" height="11" fill="#6EE7B7" rx="1.5" />
+    <rect x="328" y="149" width="9" height="9" fill="#10B981" rx="1.5" />
+    <rect x="270" y="163" width="21" height="21" fill="#0D8A68" rx="2" />
+    <rect x="296" y="162" width="14" height="14" fill="#34D399" rx="2" />
+    <rect x="316" y="167" width="13" height="13" fill="#10B981" rx="1.5" />
+    <rect x="334" y="171" width="9" height="9" fill="#6EE7B7" rx="1.5" />
+    <rect x="270" y="190" width="16" height="16" fill="#0D8A74" rx="2" />
+    <rect x="291" y="184" width="17" height="17" fill="#059669" rx="2" />
+    <rect x="313" y="189" width="12" height="12" fill="#34D399" rx="1.5" />
+    <rect x="279" y="214" width="13" height="13" fill="#10B981" rx="1.5" />
+    <rect x="299" y="208" width="11" height="11" fill="#34D399" rx="1.5" />
+    <rect x="320" y="202" width="8" height="8" fill="#4ADE80" rx="1" />
+  </g>
+
+  <g id="stark-wordmark">
+    <path d="M 458 126 C 452 120, 440 116, 420 116 L 388 116 C 374 116, 366 124, 366 138 L 366 150 C 366 164, 374 170, 392 174 L 424 180 C 438 183, 444 188, 444 196 L 444 204 C 444 212, 436 218, 422 218 L 386 218 C 370 218, 360 212, 354 204 L 338 217 C 348 229, 364 236, 386 236 L 422 236 C 448 236, 464 223, 464 204 L 464 196 C 464 179, 452 171, 432 167 L 400 161 C 388 158, 384 154, 384 148 L 384 142 C 384 135, 390 132, 400 132 L 422 132 C 436 132, 446 136, 450 142 Z" fill="#04322C" />
+    <path d="M 474 118 L 544 118 L 544 136 L 518 136 L 518 234 L 498 234 L 498 136 L 474 136 Z" fill="#04322C" />
+    <path d="M 578 118 L 546 234 L 568 234 L 590 152 L 600 152 L 588 118 Z" fill="url(#aLeftLegGrad)" />
+    <path d="M 588 118 L 600 152 L 622 234 L 642 234 L 602 118 Z" fill="#04322C" />
+    <path d="M 654 118 L 702 118 C 722 118, 734 130, 734 147 C 734 162, 724 172, 710 176 L 736 234 L 714 234 L 691 182 L 674 182 L 674 234 L 654 234 Z M 674 136 L 674 164 L 699 164 C 710 164, 715 157, 715 149 C 715 141, 710 136, 699 136 Z" fill="#04322C" />
+    <path d="M 748 118 L 768 118 L 768 165 L 806 118 L 830 118 L 790 168 L 834 234 L 810 234 L 776 182 L 768 192 L 768 234 L 748 234 Z" fill="#04322C" />
+  </g>
+
+  <text x="350" y="272" font-family="sans-serif" font-size="24.5" font-weight="500" fill="#04322C" letter-spacing="0.3">Smart Tank Assessment &amp; Risk Keeper</text>
+</svg>

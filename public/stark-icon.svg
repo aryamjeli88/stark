@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 320" width="100%" height="100%">
+  <defs>
+    <linearGradient id="tankBodyGradIcon" x1="0%" y1="20%" x2="100%" y2="80%">
+      <stop offset="0%" stop-color="#04322A" />
+      <stop offset="35%" stop-color="#064E41" />
+      <stop offset="70%" stop-color="#0D8A68" />
+      <stop offset="95%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#2DD4BF" />
+    </linearGradient>
+    <linearGradient id="orbitRingGradIcon" x1="0%" y1="60%" x2="100%" y2="40%">
+      <stop offset="0%" stop-color="#04382F" />
+      <stop offset="40%" stop-color="#0D7B60" />
+      <stop offset="75%" stop-color="#10B981" />
+      <stop offset="95%" stop-color="#4ADE80" />
+      <stop offset="100%" stop-color="#86EFAC" />
+    </linearGradient>
+    <linearGradient id="tankRoofGradIcon" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#042822" />
+      <stop offset="50%" stop-color="#063E35" />
+      <stop offset="100%" stop-color="#0D6B58" />
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(5, 5)">
+    <path d="M 50 178 C 32 208, 48 250, 105 272 C 168 296, 265 284, 348 206 C 356 198, 362 190, 366 182 C 354 208, 286 276, 194 282 C 120 286, 62 254, 50 178 Z" fill="url(#orbitRingGradIcon)" />
+    <path d="M 112 78 C 112 78, 178 54, 260 76 C 264 76, 265 110, 265 220 C 218 238, 160 238, 112 220 Z" fill="url(#tankBodyGradIcon)" />
+    <path d="M 112 78 C 112 60, 180 44, 260 66 C 260 72, 182 58, 112 78 Z" fill="url(#tankRoofGradIcon)" />
+    <path d="M 120 64 C 166 50, 218 50, 258 63" stroke="#06322A" stroke-width="4.5" fill="none" stroke-linecap="round" />
+    <line x1="134" y1="62" x2="134" y2="73" stroke="#06322A" stroke-width="3" />
+    <line x1="162" y1="56" x2="162" y2="67" stroke="#06322A" stroke-width="3" />
+    <line x1="190" y1="54" x2="190" y2="65" stroke="#06322A" stroke-width="3" />
+    <line x1="218" y1="56" x2="218" y2="67" stroke="#06322A" stroke-width="3" />
+    <line x1="244" y1="60" x2="244" y2="71" stroke="#06322A" stroke-width="3" />
+    <path d="M 94 80 L 94 224 M 104 76 L 104 222" stroke="#052E27" stroke-width="4.5" stroke-linecap="round" />
+    <line x1="94" y1="92"  x2="104" y2="92"  stroke="#052E27" stroke-width="3.2" />
+    <line x1="94" y1="110" x2="104" y2="110" stroke="#052E27" stroke-width="3.2" />
+    <line x1="94" y1="128" x2="104" y2="128" stroke="#052E27" stroke-width="3.2" />
+    <line x1="94" y1="146" x2="104" y2="146" stroke="#052E27" stroke-width="3.2" />
+    <line x1="94" y1="164" x2="104" y2="164" stroke="#052E27" stroke-width="3.2" />
+    <line x1="94" y1="182" x2="104" y2="182" stroke="#052E27" stroke-width="3.2" />
+    <line x1="94" y1="200" x2="104" y2="200" stroke="#052E27" stroke-width="3.2" />
+    <line x1="94" y1="216" x2="104" y2="216" stroke="#052E27" stroke-width="3.2" />
+
+    <g id="palm-tree-icon" transform="translate(186, 154) scale(1.35)">
+      <path d="M -3.5 44 L -2.5 0 L 2.5 0 L 3.5 44 Z" fill="#FFFFFF" />
+      <path d="M 0 0 C 0 -16, 5 -30, 1 -38 C -3 -30, 0 -16, 0 0 Z" fill="#FFFFFF" />
+      <path d="M 0 -3 C -10 -16, -22 -24, -32 -22 C -22 -14, -12 -6, 0 -3 Z" fill="#FFFFFF" />
+      <path d="M 0 -3 C 10 -16, 22 -24, 32 -22 C 22 -14, 12 -6, 0 -3 Z" fill="#FFFFFF" />
+      <path d="M 0 4 C -12 -6, -28 -8, -38 0 C -26 3, -13 5, 0 4 Z" fill="#FFFFFF" />
+      <path d="M 0 4 C 12 -6, 28 -8, 38 0 C 26 3, 13 5, 0 4 Z" fill="#FFFFFF" />
+      <path d="M 0 11 C -12 8, -25 16, -32 26 C -23 18, -13 13, 0 11 Z" fill="#FFFFFF" />
+      <path d="M 0 11 C 12 8, 25 16, 32 26 C 23 18, 13 13, 0 11 Z" fill="#FFFFFF" />
+    </g>
+
+    <rect x="265" y="86" width="13" height="13" fill="#0E8A74" rx="1.5" />
+    <rect x="281" y="94" width="10" height="10" fill="#10B981" rx="1.5" />
+    <rect x="268" y="104" width="16" height="16" fill="#0A7460" rx="2" />
+    <rect x="288" y="108" width="12" height="12" fill="#34D399" rx="1.5" />
+    <rect x="304" y="102" width="9" height="9" fill="#10B981" rx="1.5" />
+    <rect x="262" y="126" width="17" height="17" fill="#086352" rx="2" />
+    <rect x="283" y="128" width="14" height="14" fill="#10B981" rx="2" />
+    <rect x="301" y="133" width="10" height="10" fill="#6EE7B7" rx="1.5" />
+    <rect x="315" y="137" width="8" height="8" fill="#10B981" rx="1.5" />
+    <rect x="263" y="149" width="19" height="19" fill="#0D8A68" rx="2" />
+    <rect x="287" y="148" width="13" height="13" fill="#34D399" rx="2" />
+    <rect x="305" y="153" width="12" height="12" fill="#10B981" rx="1.5" />
+    <rect x="321" y="157" width="8" height="8" fill="#6EE7B7" rx="1.5" />
+    <rect x="263" y="174" width="15" height="15" fill="#0D8A74" rx="2" />
+    <rect x="282" y="168" width="16" height="16" fill="#059669" rx="2" />
+    <rect x="302" y="173" width="11" height="11" fill="#34D399" rx="1.5" />
+    <rect x="271" y="196" width="12" height="12" fill="#10B981" rx="1.5" />
+    <rect x="289" y="190" width="10" height="10" fill="#34D399" rx="1.5" />
+  </g>
+</svg>

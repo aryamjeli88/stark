@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 340" width="100%" height="100%">
+  <defs>
+    <linearGradient id="tankBodyGrad" x1="0%" y1="20%" x2="100%" y2="80%">
+      <stop offset="0%" stop-color="#04322A" />
+      <stop offset="35%" stop-color="#064E41" />
+      <stop offset="70%" stop-color="#0D8A68" />
+      <stop offset="95%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#2DD4BF" />
+    </linearGradient>
+    <linearGradient id="orbitRingGrad" x1="0%" y1="60%" x2="100%" y2="40%">
+      <stop offset="0%" stop-color="#04382F" />
+      <stop offset="40%" stop-color="#0D7B60" />
+      <stop offset="75%" stop-color="#10B981" />
+      <stop offset="95%" stop-color="#4ADE80" />
+      <stop offset="100%" stop-color="#86EFAC" />
+    </linearGradient>
+    <linearGradient id="tankRoofGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#042822" />
+      <stop offset="50%" stop-color="#063E35" />
+      <stop offset="100%" stop-color="#0D6B58" />
+    </linearGradient>
+    <linearGradient id="aRightLegGrad" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#22C55E" />
+      <stop offset="35%" stop-color="#10B981" />
+      <stop offset="85%" stop-color="#059669" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+  </defs>
+
+  <g id="tank-symbol" transform="translate(15, 10)">
+    <path d="M 50 178 C 32 208, 48 250, 105 272 C 168 296, 265 284, 348 206 C 356 198, 362 190, 366 182 C 354 208, 286 276, 194 282 C 120 286, 62 254, 50 178 Z" fill="url(#orbitRingGrad)" />
+    <path d="M 112 78 C 112 78, 178 54, 260 76 C 264 76, 265 110, 265 220 C 218 238, 160 238, 112 220 Z" fill="url(#tankBodyGrad)" />
+    <path d="M 112 78 C 112 60, 180 44, 260 66 C 260 72, 182 58, 112 78 Z" fill="url(#tankRoofGrad)" />
+    <path d="M 120 64 C 166 50, 218 50, 258 63" stroke="#FFFFFF" stroke-width="4.5" fill="none" stroke-linecap="round" />
+    <line x1="134" y1="62" x2="134" y2="73" stroke="#FFFFFF" stroke-width="3" />
+    <line x1="162" y1="56" x2="162" y2="67" stroke="#FFFFFF" stroke-width="3" />
+    <line x1="190" y1="54" x2="190" y2="65" stroke="#FFFFFF" stroke-width="3" />
+    <line x1="218" y1="56" x2="218" y2="67" stroke="#FFFFFF" stroke-width="3" />
+    <line x1="244" y1="60" x2="244" y2="71" stroke="#FFFFFF" stroke-width="3" />
+    <path d="M 94 80 L 94 224 M 104 76 L 104 222" stroke="#FFFFFF" stroke-width="4.5" stroke-linecap="round" />
+    <line x1="94" y1="92"  x2="104" y2="92"  stroke="#FFFFFF" stroke-width="3.2" />
+    <line x1="94" y1="110" x2="104" y2="110" stroke="#FFFFFF" stroke-width="3.2" />
+    <line x1="94" y1="128" x2="104" y2="128" stroke="#FFFFFF" stroke-width="3.2" />
+    <line x1="94" y1="146" x2="104" y2="146" stroke="#FFFFFF" stroke-width="3.2" />
+    <line x1="94" y1="164" x2="104" y2="164" stroke="#FFFFFF" stroke-width="3.2" />
+    <line x1="94" y1="182" x2="104" y2="182" stroke="#FFFFFF" stroke-width="3.2" />
+    <line x1="94" y1="200" x2="104" y2="200" stroke="#FFFFFF" stroke-width="3.2" />
+    <line x1="94" y1="216" x2="104" y2="216" stroke="#FFFFFF" stroke-width="3.2" />
+
+    <g id="palm-tree" transform="translate(186, 154) scale(1.35)">
+      <path d="M -3.5 44 L -2.5 0 L 2.5 0 L 3.5 44 Z" fill="#FFFFFF" />
+      <path d="M 0 0 C 0 -16, 5 -30, 1 -38 C -3 -30, 0 -16, 0 0 Z" fill="#FFFFFF" />
+      <path d="M 0 -3 C -10 -16, -22 -24, -32 -22 C -22 -14, -12 -6, 0 -3 Z" fill="#FFFFFF" />
+      <path d="M 0 -3 C 10 -16, 22 -24, 32 -22 C 22 -14, 12 -6, 0 -3 Z" fill="#FFFFFF" />
+      <path d="M 0 4 C -12 -6, -28 -8, -38 0 C -26 3, -13 5, 0 4 Z" fill="#FFFFFF" />
+      <path d="M 0 4 C 12 -6, 28 -8, 38 0 C 26 3, 13 5, 0 4 Z" fill="#FFFFFF" />
+      <path d="M 0 11 C -12 8, -25 16, -32 26 C -23 18, -13 13, 0 11 Z" fill="#FFFFFF" />
+      <path d="M 0 11 C 12 8, 25 16, 32 26 C 23 18, 13 13, 0 11 Z" fill="#FFFFFF" />
+    </g>
+
+    <rect x="265" y="86" width="13" height="13" fill="#0E8A74" rx="1.5" />
+    <rect x="281" y="94" width="10" height="10" fill="#10B981" rx="1.5" />
+    <rect x="268" y="104" width="16" height="16" fill="#0A7460" rx="2" />
+    <rect x="288" y="108" width="12" height="12" fill="#34D399" rx="1.5" />
+    <rect x="304" y="102" width="9" height="9" fill="#10B981" rx="1.5" />
+    <rect x="262" y="126" width="17" height="17" fill="#086352" rx="2" />
+    <rect x="283" y="128" width="14" height="14" fill="#10B981" rx="2" />
+    <rect x="301" y="133" width="10" height="10" fill="#6EE7B7" rx="1.5" />
+    <rect x="315" y="137" width="8" height="8" fill="#10B981" rx="1.5" />
+    <rect x="263" y="149" width="19" height="19" fill="#0D8A68" rx="2" />
+    <rect x="287" y="148" width="13" height="13" fill="#34D399" rx="2" />
+    <rect x="305" y="153" width="12" height="12" fill="#10B981" rx="1.5" />
+    <rect x="321" y="157" width="8" height="8" fill="#6EE7B7" rx="1.5" />
+    <rect x="263" y="174" width="15" height="15" fill="#0D8A74" rx="2" />
+    <rect x="282" y="168" width="16" height="16" fill="#059669" rx="2" />
+    <rect x="302" y="173" width="11" height="11" fill="#34D399" rx="1.5" />
+    <rect x="271" y="196" width="12" height="12" fill="#10B981" rx="1.5" />
+    <rect x="289" y="190" width="10" height="10" fill="#34D399" rx="1.5" />
+  </g>
+
+  <g id="stark-wordmark" fill="#FFFFFF">
+    <path d="M 466 114 C 460 110, 448 108, 432 108 C 406 108, 392 121, 392 137 C 392 153, 408 161, 432 166 C 454 171, 460 176, 460 186 C 460 196, 448 202, 430 202 C 415 202, 402 197, 394 191 L 388 206 C 399 214, 414 218, 430 218 C 458 218, 477 204, 477 185 C 477 167, 461 159, 436 153 C 416 149, 409 144, 409 135 C 409 127, 418 122, 432 122 C 444 122, 455 126, 463 131 Z" />
+    <path d="M 488 110 L 556 110 L 556 126 L 530 126 L 530 216 L 514 216 L 514 126 L 488 126 Z" />
+    <path d="M 588 110 L 560 216 L 577 216 L 597 138 L 606 138 L 595 110 Z" />
+    <path d="M 595 110 L 606 138 L 626 216 L 643 216 L 608 110 Z" fill="url(#aRightLegGrad)" />
+    <path d="M 654 110 L 698 110 C 715 110, 727 121, 727 136 C 727 149, 718 158, 706 162 L 730 216 L 711 216 L 690 167 L 671 167 L 671 216 L 654 216 Z M 671 125 L 671 153 L 696 153 C 706 153, 710 147, 710 139 C 710 131, 706 125, 696 125 Z" />
+    <path d="M 740 110 L 757 110 L 757 153 L 792 110 L 813 110 L 777 156 L 816 216 L 796 216 L 765 169 L 757 179 L 757 216 L 740 216 Z" />
+  </g>
+
+  <text x="390" y="252" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="500" fill="#FFFFFF" letter-spacing="0.4">Smart Tank Assessment &amp; Risk Keeper</text>
+</svg>

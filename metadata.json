@@ -1,0 +1,7 @@
+{
+  "name": "Aspen Search",
+  "description": "STARK transforms industrial tank inspections with on-device Computer Vision and API 653 deterministic calculations—shortening report turnaround from 48 hours to under 20 minutes with zero cloud dependency.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
