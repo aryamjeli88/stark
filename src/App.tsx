@@ -164,7 +164,7 @@ export default function App() {
   const lenisRef = useRef<Lenis | null>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
 
-  // إجبار تشغيل الفيديو برمجياً لتجنب مشكلة الشاشة السوداء في المتصفحات
+  // إجبار تشغيل الفيديو برمجيًا لتجنب مشكلة الشاشة السوداء في المتصفحات
   useEffect(() => {
     if (videoRef.current) {
       videoRef.current.defaultMuted = true;
@@ -398,7 +398,7 @@ export default function App() {
 
         {/* RIGHT CONTROLS: LANGUAGE TOGGLE & SYSTEM ACCESS CTA */}
         <div className="flex items-center gap-3">
-          {/* زر لغة نصي بسيط جداً بخط رمادي بدون أي إطارات أو مربعات */}
+          {/* زر لغة نصي بسيط جدًا بخط رمادي بدون أي إطارات أو مربعات */}
           <button
             type="button"
             onClick={toggleLanguage}
@@ -711,7 +711,7 @@ export default function App() {
             <div className="p-6 md:p-12 lg:p-16 flex items-center bg-slate-50/70">
               <p className="text-lg md:text-xl text-slate-700 font-normal leading-relaxed">
                 {lang === 'ar'
-                  ? "تسريع موثوق لعمليات التفتيش تم قياسه في محطات التخزين البترولية النائية، مقارنةً بتأخير ��لمعاملات الورقية التقليدية مقابل التحقق الطرفي اللحظي."
+                  ? "تسريع موثوق لعمليات التفتيش تم قياسه في محطات التخزين البترولية النائية، مقارنةً بتأخير المعاملات الورقية التقليدية مقابل التحقق الطرفي اللحظي."
                   : "Empirical inspection acceleration measured across remote storage terminals, contrasting legacy paperwork latency against real-time on-device edge verification."}
               </p>
             </div>
